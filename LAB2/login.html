@@ -7,19 +7,21 @@
     <body>
         <h1>Welcome to INTERNET-PROGRAMMING MOVIE SITE</h1>
         <div class = "Caption">
-            <p>로그인</p>
-            <a href="signup.html">회원가입</a>
+            <ul>
+                <li>로그인</li>
+                <li><a href="signup.html">회원가입</a></li>
+            </ul>
         </div>
         <div class = "Form">
             <form>
                 <p>
                     <label for="Id">아이디: </label>
-                    <input name = "Id" id = "Id" type = "text" placeholder="아이디 입력">
+                    <input name = "Id" id = "Id" type = "text" placeholder="아이디 입력" autocomplete="on" autofocus required>
                 </p>
 
                 <p>
                     <label for="Password">비밀번호: </label>
-                    <input name = "Password" id = "Password" type = "password" placeholder="비밀번호 입력">
+                    <input name = "Password" id = "Password" type = "password" placeholder="비밀번호 입력" required>
                 </p>
 
                 <div class = "Button">
