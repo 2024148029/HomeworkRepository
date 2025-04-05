@@ -1,0 +1,39 @@
+h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.Form {
+    margin: 0 auto;
+    width: 400px;
+    border: solid;
+    padding: 5px 30px 30px 20px;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    width: 80px;
+}
+
+.Button {
+    display: inline;
+    margin-right: 100px;
+}
+
+input[type="submit"], input[type="reset"] {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+input[type="submit"] {
+    background-color: lightgreen;
+}
+
+input[type="reset"] {
+    background-color:red;
+    color: white;
+}
