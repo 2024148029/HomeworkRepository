@@ -1,0 +1,296 @@
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.Form {
+    margin: 0 auto;
+    width: 400px;
+    border: solid;
+    padding: 5px 30px 10px 20px;
+}
+
+.Form p {
+    margin: 10px auto;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    width: 100px;
+}
+
+input[type="text"], input[type="date"], input[type="password"], input[type="number"], select {
+    font-size: small;
+    height: 25px;
+    width: 200px;
+}
+
+
+/* login and signup */
+.Caption {
+    margin: 0 auto;
+}
+
+li {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: underline;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+    padding: 5px;
+}
+
+.Caption>ul>li::after{
+    content: "|";
+    padding-left: 5px;
+    float: right;
+    display: block;
+}
+
+.Caption>ul>li:last-child::after{
+    content: "";
+}
+
+/* button */
+input[type="submit"], input[type="reset"] {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px 2px 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: medium;
+}
+
+input[type="submit"] {
+    background-color: lightgreen;
+    margin-right: 10px;
+}
+
+input[type="reset"] {
+    background-color:red;
+    color: white;
+}
+
+/*Heading*/
+.Header {
+    margin: auto;
+    width: 1020px;
+}
+
+.Header h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 1020px;
+    text-align: left;
+    animation: movingheader 2s ease-in-out; 
+}
+@keyframes movingheader {
+    from {margin-left: 1024px;}
+    to {margin-left: 0px;}
+}
+
+h2 {
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    width: 1020px;
+}
+
+/*navigation*/
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px 30px 0px;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+nav div a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+nav > div:first-child {
+    border-style: solid;
+    border-right: 2px;
+    border-left: 2px;
+    border-color: red;
+}
+/*Search Content*/
+.SearchContent {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 50px;
+    width: 1020px;
+}
+.SearchForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1020px;
+}
+.SearchForm input[type="text"] {
+    width: 900px;
+}
+.SearchForm button[type="submit"] {
+    width: 100px;
+    margin-left: 2%;
+}
+/*Main Content*/
+.MainContent {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 50px;
+    width: 1020px;
+}
+/*Movie Content*/
+.Movies {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Movieresult {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    padding: 10px;
+}
+.MovieSection {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 30px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+.MovieSection img {
+    width: 310px;
+    height: 450px;
+    margin-bottom: 20px;
+}
+.MovieSection div {
+    position: relative;
+}
+.MovieSection div:hover img {
+    filter: brightness(0.5);
+}
+/* Description */
+.MovieSection div:hover span {
+    display: block;
+    position: absolute;
+    color: white;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    font-size: small;
+    font-family:sans-serif;
+    line-height: 2.1;
+    padding-right: 10px;
+}
+.MovieSection p {
+    margin: 1px;
+    text-align: center;
+    font-family: sans-serif;
+}
+/* movie title */
+.MovieSection p:nth-child(2) {
+    font-weight: bold;
+    font-size: medium
+}
+/* Description */
+.MovieSection span {
+    display: none;
+}
+.ArrangeSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    margin-top: 20px;
+    width: 230px;
+    height: 200px;
+    padding: 20px;
+    background-color:rgb(243, 243, 243);
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+.ArrangeSection label {
+    font-weight: bold;
+}
+.ArrangeSection p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 5px;
+}
+.ArrangeSection input[type="radio"] {
+    margin-right: 10px;
+}
+
+h2 ~ hr {
+    width: 1018px;
+}
+/*flex responsive*/
+@media only screen and (max-width: 480px) {
+    .MainContent {
+        width: 100%;
+    }
+    .Header {
+        width: 100%;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav div {
+        margin-bottom: 10px;
+    }
+    h2 {
+        width: 100%;
+        justify-content: center;
+    }
+    h2 ~ hr {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+    .MainContent {
+        width: 100%;
+    }
+    .Header {
+        width: 100%;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav div {
+        margin-bottom: 10px;
+    }
+    h2 {
+        width: 100%;
+        justify-content: center;
+    }
+    h2 ~ hr {
+        width: 100%;
+    }
+}
