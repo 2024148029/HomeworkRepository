@@ -138,5 +138,20 @@
         "image" : "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jWBDz6Mf9aQVBiUS76JQsEhvoJl.jpg",
         "date" : "1995-11-21",
         "rating" : "5.4" 
+    },
+    {
+        "name" : "Get Shorty",
+        "description" : "Chili Palmer is a Miami mobster who gets sent by his boss, the psychopathic \"Bones\" Barboni, to collect a bad debt from Harry Zimm, a Hollywood producer who specializes in cheesy horror films. When Chili meets Harry's leading lady, the romantic sparks fly. After pitching his own life story as a movie idea, Chili learns that being a mobster and being a Hollywood producer really aren't all that different.",
+        "image" : "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ism3TUNdIl5MpQR6E8ApjE89LQy.jpg",
+        "date" : "1995-10-20",
+        "rating" : "6.4" 
+    },
+    {
+        "name" : "Copycat",
+        "description" : "An agoraphobic psychologist and a female detective must work together to take down a serial killer who copies serial killers from the past.",
+        "image" : "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oMgwJb016znNZcpDR20eXxZoW8A.jpg",
+        "date" : "1995-10-27",
+        "rating" : "6.5" 
     }
+    
 ]
